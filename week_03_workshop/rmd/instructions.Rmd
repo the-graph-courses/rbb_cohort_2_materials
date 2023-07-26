@@ -31,7 +31,7 @@ Your task will be to create a short R Markdown-based report comparing the distri
 
 Knit your report into a valid HTML file. When you knit your file, please turn OFF code echo on all chunks, so that you have a clean output.
 
-To submit your work, please upload just your knitted HTML file to the submission page.
+To submit your work, please upload JUST YOUR Rmd to the submission page. But make sure the Rmd can be knit successfully before uploading.
 
 # Downloading and Opening the Assignment
 
