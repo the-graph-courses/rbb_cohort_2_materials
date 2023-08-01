@@ -1,5 +1,5 @@
 ---
-title: "Workshop 4: Example report"
+title: "Workshop Example report"
 output:
   prettydoc::html_pretty:
     theme: architect
