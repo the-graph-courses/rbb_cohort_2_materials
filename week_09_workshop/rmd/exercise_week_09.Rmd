@@ -54,10 +54,10 @@ Create a time series plot by first summarizing the data to count the number of a
 
 ```{r}
 # Summarize data
-"WRITE YOU CODE HERE"
+"WRITE YOUR CODE HERE"
 
 # Create a line plot using the summarized data
-"WRITE YOU CODE HERE"
+"WRITE YOUR CODE HERE"
 ```
 
 ## Time Series Plot using geom_line() with stat = "count"
@@ -98,7 +98,7 @@ When customizing date formats in ggplot2, we use specific codes to represent var
 Change the axis ticks labels on the previous line graph to display abbreviated labels every month.
 
 ```{r}
-"WRITE YOU CODE HERE"
+"WRITE YOUR CODE HERE"
 ```
 
 
@@ -108,7 +108,7 @@ Here's a histogram looking at the distribution of a numerical variable, `muac_cm
 
 ```{r}
 # Draw histogram of MUAC with black outline, white fill, and bin width of 0.5
-"WRITE YOU CODE HERE"
+"WRITE YOUR CODE HERE"
 ```
 
 This distribution can also be visualized with a kernel density plot, which is an alternative to histograms.
