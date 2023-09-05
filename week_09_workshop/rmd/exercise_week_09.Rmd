@@ -234,12 +234,6 @@ Set `fill` to age group, and compare distributions between age groups using `pos
 Try to come up with 3 different plots.
 
 ```{r}
-ggplot(data =  malidd, 
-       mapping = aes(x = height_cm, fill = age_group)) +
-  geom_density(alpha = 0.4, position = "stack")
-
-ggplot(data =  malidd, 
-       mapping = aes(x = height_cm, fill = age_group)) +
-  geom_density(alpha = 0.4, position = "identity")
+"WRITE YOUR CODE HERE"
 ```
 
