@@ -32,8 +32,7 @@ pacman::p_load(tidyverse, janitor, esquisse)
 # INSTRUCTION: Here, use `read_csv()` to load in your dataset from the "data" folder
 # The dataset you need should have the same name as your script. 
 
-
-
+uk <- read_csv("data/04_TEACHER_DEMO_sex_attitudes_survey_uk.csv")
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## 3. Create and export a frequency table ----
@@ -42,10 +41,10 @@ pacman::p_load(tidyverse, janitor, esquisse)
 # make a frequency table of the `rnssecgp_6` variable
 # Then use `write_csv()` to save this table in your "outputs" folder
 
+tabyl(uk, _______________)
 
-
-
-
+write_csv(x = , 
+          file = )
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## 4. Create plots to show POINT A & POINT B below, then export these ----
@@ -55,7 +54,7 @@ pacman::p_load(tidyverse, janitor, esquisse)
 # (If you know how to work with ggplot directly, you can skip esquisse)
 # Then use the `ggsave()` function to save your plots in the "outputs" folder
 
-# POINT A : The majority of respondents are in the 25-34 age group (`agrp` variable)
+# POINT A : A plurality of respondents are in the 25-34 age group (`agrp` variable)
 # POINT B : Among respondents aged 65-74, a large proportion consider religion to be "Fairly important" (`religimp` variable)
 
 # HINT: The techniques needed above were covered in the "Data dive" and "RStudio Project" lessons. 
@@ -63,8 +62,14 @@ pacman::p_load(tidyverse, janitor, esquisse)
 # Do this by clicking on the Data tab of your esquisse window (bottom right). 
 # You should see some sliders or variable selectors you can use to filter
 
+age_group_plot <- uk %>%
+ ggplot() +
+ aes(x = agrp, fill = agrp) +
+ geom_bar() +
+ scale_fill_hue(direction = 1) +
+ theme_minimal()
 
-
+ggsave(filename = "outputs/age_group.png", plot = age_group_plot)
 
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
